@@ -1,0 +1,415 @@
+@font-face {
+	src: url("../src/fonts/Roboto/Roboto-Regular.ttf");
+	font-family: "Roboto";
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: #0079bf;
+}
+
+.header {
+	background: #0067a3;
+	padding-left: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerTitle {
+	padding: 7px 8px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 33px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.dropdown {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+	position: absolute;
+	width: 134px;
+	height: 60px;
+	background: #ffffff;
+	border-radius: 5px;
+	top: 80px;
+	right: 17px;
+}
+
+.dropdown::before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	left: 90px;
+	top: -5.5px;
+	background: #ffffff;
+	transform: rotate(45deg);
+}
+
+.none {
+	display: none;
+}
+
+.dropdownButton {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 16px;
+}
+
+.avatar {
+	margin-right: 7px;
+}
+
+.dropdownMenu {
+	color: #000000;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdownItem {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.dropdownLink {
+	color: #000000;
+	text-decoration: none;
+}
+
+.dropdownLink:hover {
+	color: #0067a3;
+	text-decoration: underline;
+}
+
+.main {
+	background-color: #0079bf;
+	display: flex;
+	flex-grow: 1;
+	margin: 0 auto;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.tasklist {
+	background-color: #ebecf0;
+	width: 282px;
+	border-radius: 5px;
+	padding: 12px;
+	margin: 24px;
+	height: fit-content;
+}
+
+.tasklistTitle {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	margin: 0 auto;
+}
+
+.listItem {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.itemTitle {
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 7px 8px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.itemTitle:hover {
+	background-color: #bbddf5;
+}
+
+.titleLink {
+	text-decoration: none;
+}
+
+.button {
+	border: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 17px;
+	width: 102px;
+	height: 29px;
+	text-align: center;
+}
+
+.buttonAdd {
+	color: #5e6c84;
+}
+
+.buttonAdd:hover {
+	background-color: #ffffff;
+	box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+}
+
+.button:disabled {
+	background-color: #ebecf0;
+	box-shadow: none;
+	cursor: default;
+}
+
+.plusIcon {
+	padding-right: 3px;
+}
+
+.buttonSubmit {
+	background-color: #0079bf;
+	color: #ffffff;
+}
+
+.buttonSubmit:hover {
+	box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+	background-color: #0067a3;
+}
+
+.input,
+.select,
+.textarea {
+	height: 35px;
+	border: none;
+	background: #ffffff;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.input {
+	width: 96.46%;
+	padding-left: 8px;
+}
+
+.textarea {
+	resize: none;
+	width: 96.46%;
+	height: 70px;
+	padding-left: 8px;
+	padding-top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+}
+
+.edit {
+	display: flex;
+	flex-direction: column;
+}
+
+.editText {
+	resize: none;
+	width: 100%;
+	padding-left: 8px;
+	padding-top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	height: 15vh;
+}
+
+.select {
+	width: 100%;
+	cursor: pointer;
+}
+
+.input:focus,
+.textarea:focus {
+	border: 2px solid #0067a3;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden.visible {
+	display: flex;
+}
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 5px;
+	padding: 25px;
+	width: 85vw;
+	max-width: 1200px;
+	margin: 20px 20px;
+}
+
+.homeLink {
+	display: block;
+	align-self: flex-end;
+	margin: 0;
+	text-decoration: none;
+	color: #737373;
+}
+
+.detailTitle {
+	margin: 0;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.detailHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.taskNotFound {
+	color: #0067a3;
+}
+
+.createdAt {
+	color: #737373;
+}
+
+.emptyState {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.footer {
+	background: #0067a3;
+	padding: 17px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerItem {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-right: 36px;
+}
+
+.footerRight {
+	display: flex;
+	/* justify-content: start; */
+}
+
+.activeTasks {
+	margin-right: 36px;
+}
+
+@media screen and (max-width: 480px) {
+	.headerTitle,
+	.footer {
+		display: none;
+	}
+
+	.header {
+		background: #0079bf;
+		justify-content: flex-end;
+	}
+
+	.dropdownButton {
+		padding: 10px 10px;
+	}
+
+	.dropdown {
+		top: 65px;
+		right: 11px;
+		box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+	}
+
+	.board {
+		justify-content: center;
+	}
+
+	.tasklist {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.detail {
+		width: 75vw;
+	}
+
+	.buttonAdd:hover,
+	.buttonSubmit:hover {
+		box-shadow: none;
+	}
+
+	.editText {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.detail {
+		width: 70vw;
+	}
+}
